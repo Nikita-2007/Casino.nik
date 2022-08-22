@@ -1,0 +1,17 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+body {
+    background-color: rgb(46, 156, 79);
+}
+
+form {
+    margin: 16px;
+    text-align: center;
+}
