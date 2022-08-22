@@ -1,6 +1,6 @@
     <footer>
         <!--Подвал-->
     </footer>
-    <script src="script.js"></script>
+    <script src="view/script.js"></script>
 </body>
 </html>
