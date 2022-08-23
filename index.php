@@ -1,12 +1,14 @@
 <?php
 $db = "model/casino.sqlite";
-require_once "model/migration.php";
-require_once "view/header.php";
+#include_once "model/migration.php";
+include_once "controller/function.php";
+include_once "view/header.php";
 ?>
 
 <form method="post">
     <input type="submit" name="bet" value="GO!">
-    <input type="submit" name="restart  " value="Restart">
+    <input type="submit" name="restart" value="Restart">
 </form>
+<?statistick($db);?>
 
-<?require_once "view/footer.php";?>
+<?include_once "view/footer.php";?>

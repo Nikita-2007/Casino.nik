@@ -3,6 +3,7 @@ error_reporting(E_ALL);
 try {
     #Подключение к базе данных
     $connect = new PDO("sqlite:$db");
+
     #SQL запрос на создание таблицы рулетки
     $sql = "CREATE TABLE IF NOT EXISTS `roulette` (
     id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -17,8 +18,10 @@ try {
     #Выполняем SQL запрос
     $connect -> exec($sql);
     echo "Создана таблица 'roulette' <br/>";
+
     #Заполняем таблицу
-    $sql = "INSERT INTO `roulette`(sector, parity, color) VALUES
+    $sql = "
+    INSERT INTO `roulette`(sector, parity, color) VALUES
     (0, 'zero', 'green'),
     (32, 'even', 'red'),
     (15, 'odd', 'black'),
@@ -55,12 +58,12 @@ try {
     (12, 'even', 'red'),
     (35, 'odd', 'black'),
     (3, 'odd', 'red'),
-    (26, 'even', 'black'),
+    (26, 'even', 'black')
     ";
     $countStr = $connect -> exec($sql);
     echo "В таблицу `roulette` добавлено строк: $countStr <br/>";
     $connect = null;
 }
-catch (PDOException $e) {
-echo "Ошибка базы данных: " . $e -> getMessage(), "<br/>";
+catch (PDOException $e){
+    echo "Ошибка базы данных: " . $e -> getMessage(), "<br/>";
 }
