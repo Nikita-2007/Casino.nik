@@ -9,6 +9,7 @@ include_once "view/header.php";
     <input type="submit" name="bet" value="GO!">
     <input type="submit" name="restart" value="Restart">
 </form>
+<?echo "<div>", $sector, "</div>";?>
 <?statistick($db);?>
 
 <?include_once "view/footer.php";?>
