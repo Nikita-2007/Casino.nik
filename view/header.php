@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Казино</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="view/style.css">
+    <link rel="shortcut icon" href="view/icons/icon.png" type="image/png">
+    <link rel="stylesheet" href="view/css/normalize.css">
+    <link rel="stylesheet" href="view/css/style.css">
 </head>
 <body>
     <header>
