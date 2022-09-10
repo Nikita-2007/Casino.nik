@@ -7,7 +7,7 @@
     <title>Казино</title>
     <link rel="shortcut icon" href="view/icons/icon.png" type="image/png">
     <link rel="stylesheet" href="view/css/normalize.css">
-    <link rel="stylesheet" href="view/css/style.css">
+    <link rel="stylesheet" href="view/css/style.php">
 </head>
 <body>
     <header>

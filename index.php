@@ -1,5 +1,6 @@
 <?php
 //model
+error_reporting(E_ALL);
 require_once("model/roulette.php");
 require_once("model/user.php");
 require_once("model/game.php");
